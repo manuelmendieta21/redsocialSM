@@ -26,7 +26,7 @@ function confirm(){
         title: '¡Inicio correcto!',
         icon: 'success',
         showConfirmButton: false,
-        timer:1500
+        timer:2100
     }).then(function(){
         window.location.href = 'dashboard.html'; 
     });
@@ -65,6 +65,7 @@ function findByUser(login, password) {
         if (usersDatabase[i].username === login && usersDatabase[i].password === password) {
             console.log("Usuario autenticado correctamente");
             userFound = true;
+            playAlertSound1()
             confirm()
             // Redireccionar a otra página después del inicio de sesión exitoso
             // Cambia 'dashboard.html' por la URL de la página a la que quieres redirigir
@@ -85,6 +86,12 @@ function playAlertSound() {
     const alertSound = document.getElementById('alertSound');
     if (alertSound) {
         alertSound.play();
+    }
+}
+function playAlertSound1() {
+    const alertSound = document.getElementById('alertSound');
+    if (alertSound1) {
+        alertSound1.play();
     }
 }
 // Agregar evento 'submit' al formulario para llamar a validateLogin
