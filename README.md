@@ -1,6 +1,6 @@
 
 
-
+Documentacion funcionalidades tailwing
 input 
     type="password"                         <!-- Tipo de campo de entrada: contraseña -->
     id="password"                           <!-- Identificador único del campo -->
