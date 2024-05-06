@@ -4,7 +4,11 @@ module.exports = {
   //creo la carpeta src 
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'pollito': '#F6FF33',
+      },
+    },
   },
   plugins: [],
 }
